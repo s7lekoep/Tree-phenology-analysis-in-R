@@ -6,7 +6,7 @@ output: html_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE,fig.align="center")
 ```
 
 # Lecture 03 Tree dormancy
@@ -18,8 +18,6 @@ This analysis takes into consideration the special features that present our dat
 On the one hand the individual meteorological variables are highly autocorrelated, yet temperatures of two consecutive days are more closely correlated with each other than with temperatures of any other day.
 On the other hand the number of independent data points (daily temperature record) exceed  the number of dependent variables (a flowering date per year).
 
-
-
 2. Which are the advantages (2) of the BBCH scale compared with earlies scales?
 
 * The phonological stages are standardized (scale from 0 to 9). That makes it esay to recognize them under all field conditions across species. This allows to creat an easily comparable metric for classification. 
@@ -27,8 +25,8 @@ On the other hand the number of independent data points (daily temperature recor
 * The combination of the principal and the secondary status (also scale from 0 to 9) results in the 2 digital code. In this code the first digit represent the macro stage (principal growth stage) and the second digit a specific micro stage (secondary growth stages) to precise steps within.
 
 3. Classify the following phenological stages of sweet cherry according to the BBCH scale:
-```{r echo=FALSE}
 
+```{r echo=FALSE}
 knitr::include_graphics('Figures/Lecture3.png')
 ```
 
@@ -1554,12 +1552,13 @@ anim_save("data/chill_comparison_animation.gif", animation = last_animation())
 
 ```{r echo=FALSE}
 
-knitr::include_graphics('AnimationGif.gif')
+knitr::include_graphics('Figures/AnimationGif.gif')
 
 ```
 
 
 # Lecture 17 simple phenology analysis
+
 1.Provide a brief narrative describing what p-hacking is, and why this is a problematic approach to data analysis.
 
 The aim of a data analysis is to find a correlation between the data.  
