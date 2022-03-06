@@ -30,13 +30,13 @@ On the other hand the number of independent data points (daily temperature recor
 
 <span style="color:gray">2. Which are the advantages (2) of the BBCH scale compared with earlies scales?
 
-* The phonological stages are standardized (scale from 0 to 9). That makes it esay to recognize them under all field conditions across species. This allows to creat an easily comparable metric for classification. 
+* The phonological stages are standardized (scale from 0 to 9). That makes it easy to recognize them under all field conditions across species. This allows to create an easily comparable metric for classification. 
 
-* The combination of the principal and the secondary status (also scale from 0 to 9) results in the 2 digital code. In this code the first digit represent the macro stage (principal growth stage) and the second digit a specific micro stage (secondary growth stages) to precise steps within.
+* The combination of the principal and the secondary status (also scale from 0 to 9) results in the 2 digital code. In this code the first digit represents the macro stage (principal growth stage) and the second digit a specific micro stage (secondary growth stages) to precise steps within.
 
 <span style="color:gray">3. Classify the following phenological stages of sweet cherry according to the BBCH scale:
 
-```{r echo=FALSE}
+```{r echo=FALSE,fig.cap = "Phenological stages of cherry"}
 knitr::include_graphics('Figures/Lecture3.png')
 ```
 
@@ -57,59 +57,59 @@ Right image:
 
 <span style="color:gray">1. List the main drivers of climate change at the decade to century scale, and briefly explain the mechanism through which the currently most important driver affects our climate.
 
-* Sun:She warms the earth through solar radiation and her activity chnages slightly over decades, but not recent climate change. 
+* Sun: It warms the earth through solar radiation and her activity changes slightly over decades, but not recent climate change. 
 
 * Aerosols: (=suspensions of liquid, solid or mixes particles with highly variable chemical compositions and size distribution) They reflect sun light so that the light doesn`t reach the earth (->cooling effect). There are natural and human causes aerosols exiting.
 
-* Clouds: Have both warming effect(eg. warming night) and cooling (eg. sunny day) net effect. They are likely important but poorly understood. The effect depends probably on height, shape and latitude.
+* Clouds: Have both warming effect (e.g. warming night) and cooling (e.g. sunny day) net effect. They are likely important but poorly understood. The effect depends probably on height, shape, and latitude.
   
-* Ozone: Stratospheric ozone: It`s Shields the earth from UV-B radiation through greenhouse gas. They have a         warming effect 
-   destoyed by CFCs (Chlorofluorocarbon).
-* Surface albedo: Surfaces reflect/absorb radiation dependent on their material (lbright surfaces e.g. ice reflect almost all radiation). -> landscape change lead to change of reflection (water adsorbent almost all reflaction).
+* Ozone: Stratospheric ozone: It`s Shields the earth from UV-B radiation through greenhouse gas. They have a warming effect destroyed by CFCs (Chlorofluorocarbon).
+* Surface albedo: Surfaces reflect/absorb radiation dependent on their material (bright surfaces e.g. ice reflect almost all radiation). -> landscape change led to change of reflection (water adsorbent almost all reflection).
 
-* Greenhouse gases: Atmospheric gases that absorb long wavelength radiation (mostly) coming from earth (eg. Co2, Ch4, N2O). This are by far the biggest driver of the recent climate change.
+* Greenhouse gases: Atmospheric gases that absorb long wavelength radiation (mostly) coming from earth (e.g. Co2, Ch4, N2O). This are by far the biggest driver of the recent climate change.
 
-* Longterm-drivers:
+* Long-term-drivers:
   + Trends in solar activity, because of the star life cycle.
   + Ocean current/continent constellation has an influence on the global heat transfer changed (gulf stream).
   + super Volcanic ...   
-There are many factors, but the most of them operate over long time scale. The most important factor are the greenhouse gases.
+There are many factors, but the most of them operate over long-time scale. The most important factor are the greenhouse gases.
 
 <span style="color:gray">2. Explain briefly what is special about temperature dynamics of the recent decades, and why we have good reasons to be concerned.
 
-* The last two millenniums up to a few decades ago the global climate was quite cold on average. However looking at the last decade the the average temperature keeps rising. This temperture increase brings the risk of a positive feedback, which consequences e.g. melting permafrost ande reduce the albedo.
-If this increase would go on it would probably leads in unstable word. We don`t know what will happend but we know that humans have never experienced warming as rapid as we have seem in the recemt decades. 
+* The last two millenniums up to a few decades ago the global climate was quite cold on average. However, looking at the last decade the average temperature keeps rising. This temperature increase brings the risk of a positive feedback, which consequences e.g., melting permafrost and reduce the albedo.
+If this increase would go on it would probably lead in unstable word. We don`t know what will happen but we know that humans have never experienced warming as rapid as we have seemed in the recent decades. 
 
 <span style="color:gray">3. What does the abbreviation ‘RCP’ stand for, how are RCPs defined, and what is their role in projecting future climates?
+  * RCPs= Representative Concentration Pathways. This RCPs are the new generation of greenhouse forcing scenarios, which are the basement for global climate models (GCMs). These global models are very computationally intensive. Therefor they get down sampled for specific topics. There are two ways of down sampling: 
+  + Dynamic down sampling: RCM (Regional climate model) are used with boundary conditions from GCMs
+  advantage: delivers spatially coherent scenarios.
+  + Statistical down sampling: Weather generators or elta changes simply add differential based on present differences.  
 
-  * RCPs= Representative Concentration Pathways. This RCPs are the new generation of greenhouse forcing scenarios, which are the basement fore global climate models (GCMs). This golabal models are very computationally intensive. Therefor the they get downsampeld fpr specific topics. There are tow ways of downsampling: 
-  + Dynamic downsampling: RCM (Regional climate model) are used with boundary conditions from GCMs
-  advantage: delivers spatially coherent senarios.
-  + Statistical downsampling: Weather generators or elta changes simply add differential based on present differences.  
 
 <span style="color:gray"> Briefly describe the 4 climate impact projection methods described in the fourth video.
 
 * Statistical models: Establish relationship between climate parameters and impact measure.
 * Species distributions modeling: It`s establish relationship between different climatic parameters and presence/absence data for species/system.
 * Process-based model: There aim is to represent all major system processes with equations. They try to capture all the scientific knowledge of all processes.
-* Climate analogue modles: Make use of the idea that for most projected climates for a given location, we can find a place where similar climate exists today.
+* Climate analogue models: Make use of the idea that for most projected climates for a given location, we can find a place where similar climate exists today.
 
 # **05** Winter chill projections
 
 <span style="color:gray">1. Sketch out three data access and processing challenges that had to be overcome in order to produce chill projections with state-of-the-art methodology.
 
-
 * High resolution regional temperature data: To calculate chilling hours per day high resolution temperature data is needed. But in some places (link Oman) these data were for several years missing. Fortunately, you can work around such problems if there are weather stations nearby which generously donated its data.
 
-* Processing global data into high-resolution regional data (Tunisia): To calculate suitable data for a regional study you have to use rasterized data from the GCMs and upscale them using a regional climate model. But considering an ensemble study is required, as usually the case, this scales processing and data storage requirements exponentially. This further imposes problems if no automated way of processing the data is set up.
+* Processing global data into high-resolution regional data (Tunisia): To calculate suitable data for a regional study you must use rasterized data from the GCMs and upscale them using a regional climate model. But considering an ensemble study is required, as usually the case, this scales processing and data storage requirements exponentially. This further imposes problems if no automated way of processing the data is set up.
 
-* Processing data without programming language, usable models or an API (up to California): Up to now a lot of data was analysed manually with excel or filling creating data with models. This took a lot of time and was cumbersome. Different programms where used all requiring different input methods. This was later solved with an programming language.
+* Processing data without programming language, usable models, or an API (up to California): Up to now a lot of data was analyzed manually with excel or filling creating data with models. This took a lot of time and was cumbersome. Different programs were used all requiring different input methods. This was later solved with a programming language.
+
 Processing multiple scenarios increases processing and storage requirements exponentially (Kenya)
 
 
 <span style="color:gray">2. Outline, in your understanding, the basic steps that are necessary to make such projections.
 
-* First, collect proper data on projected future climates.  * Second, choose a model and have it create scenarios.
+* First, collect proper data (long term) on projected future climates. 
+* Second, choose a model and have it created scenarios.
 * Third, look for a good way to present your results so that they are easier to interpret. 
 * Fourth, validate the results and adjust the model if necessary or create/use a new one (start again at step two).  
  
@@ -124,7 +124,7 @@ library(chillR)
 <span style="color:gray">1. Write a basic function that calculates warm hours (>25°C)
 
 
-A basic function that calculates warm hours (>25°C) with a random dataframe (`df`) could look like that:
+A basic function that calculates warm hours (>25°C) with a random data frame (`df`) could look like that:
 ```{r eval=FALSE }
 calculate<-function(df,Warm_temp)
 {
@@ -140,7 +140,7 @@ calculate(df,Warm_temp=25)
 <span style="color:gray">2. Apply this function to the `Winters_hours_gaps` dataset
  
 
-The `Winters_hours_gaps` dataset was recorded in a walnut orchard near Winters, California, in 2008. This dataset has hourly time steps, which is necessary to compute the Chilling Hours. For the calculation we just need the date, time of the measurement and the tempertaur data. The other parameters of the data set can be ignored.
+The `Winters_hours_gaps` dataset was recorded in a walnut orchard near Winters, California, in 2008. This dataset has hourly time steps, which is necessary to compute the Chilling Hours. For the calculation we just need the date, time of the measurement and the temperature data. The other parameters of the data set can be ignored.
 
 ```{r Winters_hours_gaps}
 
@@ -167,7 +167,7 @@ Accordingly, there were 1275 hours above 25°C.
 <span style="color:gray">3. Extend this function, so that it can take start and end dates as inputs and sums up warm hours between these dates
 To calculate the chilling or warm hours we used the `chillR` package. 
 
-To calculate the temperature only within a certain period of time, the function must be extended.
+To calculate the temperature only within a certain period, the function must be extended.
 First, the input of a date must be enabled. With the following function the date can be entered as a number like `20080304`, which is the 4^th^ March 2008. 
 The function creates a list with the year, month and day.  
 
@@ -305,9 +305,9 @@ Grafic_allInOne
 
 <span style="color:gray">2. Produce an hourly dataset, based on idealized daily curves, for the KA_weather dataset (included in chillR).
 
-The daylenght is an important parameter for the calculation of the daily temperature curve.  
-Due to the fact that longer days have the potential to be significantly hotter than cooler ones. 
-There are different ways to calculate the daily temperature curve one way is the idealized daily temperature curves. We can calculate this by using the example of the dataset `KA_waether`and the  `stack_hourly_temps` function of the `chillR` library. This function is prediction the ideal curve taking into account the latitude.
+The day length is an important parameter for the calculation of the daily temperature curve.  
+Since longer days have the potential to be significantly hotter than cooler ones. 
+There are different ways to calculate the daily temperature curve one way is the idealized daily temperature curves. We can calculate this by using the example of the dataset `KA_waether` and the `stack_hourly_temps` function of the `chillR` library. This function is prediction the ideal curve considering the latitude.
 
 ```{r Ka}
 temps<-stack_hourly_temps(KA_weather, latitude = 60.17)# input dataset mast have daily minimum and maximum temperatures; output calculate hourly temperatures
@@ -317,7 +317,7 @@ temps<-stack_hourly_temps(KA_weather, latitude = 60.17)# input dataset mast have
 <span style="color:gray">3. Produce empirical temperature curve parameters for the Winters_hours_gaps dataset, and use them to predict hourly values from daily temperatures (this is very similar to the example above, but please make sure you understand what’s going on).
 
 However, there are areas where the idealized curve would not make sense, because no topological parameters are considered in the calculation. For example, a field on a north slope is significantly colder than a field on a south slope. Accordingly, an idealized curve that only refers to the latitude would not yield meaningful values.  
-Therefore there exist fore example the empirical daily temperature curve. 
+Therefore, there exist for example the empirical daily temperature curve. 
 We used the `Empirical_daily_temperature_curve` function to predict the daily temperatures of the `Winters_hours_gaps` data. 
 
 
@@ -325,13 +325,13 @@ We used the `Empirical_daily_temperature_curve` function to predict the daily te
 
 empi_curve<-Empirical_daily_temperature_curve(Winters_hours_gaps)# determine the typical pattern of hourly temperatures at this location
 
-ggplot(data=empi_curve[1:96,], aes(Hour,Prediction_coefficient))+geom_line(lwd=1.3, col="red")+facet_grid(rows=vars(Month))+xlab("Hour of the day")+ylab("Prediction coefficient") + theme_bw(base_size=20)
+ggplot(data=empi_curve[1:96,], aes(Hour,Prediction_coefficient))+geom_line(lwd=1.3, col="red")+facet_grid(rows=vars(Month))+xlab("Hour of the day")+ylab("Prediction coefficient") + theme_bw(base_size=10)
 ```
 
 # **09** Getting temperature data
 <span style="color:gray">1. Choose a location of interest and find the 25 closest weather stations using the handle_gsod function.
 
-All countries of the world have weather stations that record precisely the weather. Unfortunately this information are not freely available instead they are sold by the national weather. However there are free available temperature databases e.g. the [Global Summary of the Day (GSOD) database](https://www.ncei.noaa.gov/access/search/data-search/global-summary-of-the-day).
+All countries of the world have weather stations that precisely record the weather. Unfortunately, this information are not freely available instead they are sold by the national weather. However there are free available temperature databases e.g. the [Global Summary of the Day (GSOD) database](https://www.ncei.noaa.gov/access/search/data-search/global-summary-of-the-day).
 The `chillR` has a function called `handle_gsod()`, which makes the download of data from this website much easier. To get a first overview from the stations we can use `action="list_stations"` option. 
 
 ```{r eval=FALSE, results='asis'}
@@ -379,7 +379,7 @@ write.csv(cleaned_weather$weather,"data/Helsinki_weatherAB90.csv",row.names=FALS
 
 <span style="color:gray">1. Use chillR functions to find out how many gaps you have in this dataset (even if you have none, please still follow all further steps).
 
-In this lesson was the goal to deal with the gaps that our data can have. First we will check how much data is missing.
+In this lesson was the goal to deal with the gaps that our data can have. First, we will check how much data is missing.
 
 ```{r look }
 Helsinki <- read.csv("data/Helsinki_weatherAB90.csv")#read in data 
@@ -396,7 +396,7 @@ DT::datatable(fixed_data$QC, options = list(pageLength = 10), caption="Quality c
 
 <span style="color:gray">2. Create a list of the 25 closest weather stations using the handle_gsod function.
 
-As we can see there are just one day in 1999, 2003 and 2020 missing. To fill this gaps we need data from other weather stations in the neighborhood. To find them, we can again use the `handle_gsod()` function:
+As we can see there are just one day in 1999, 2003 and 2020 missing. To fill this gaps, we need data from other weather stations in the neighborhood. To find them, we can again use the `handle_gsod()` function:
 
 ```{r stations, eval=FALSE}
 station_list<-handle_gsod(action="list_stations",location=c(25.6, 60.17),
@@ -410,7 +410,7 @@ DT::datatable(station_list, options = list(pageLength = 10), caption="List of GS
 ```
 <span style="color:gray">3. Identify suitable weather stations for patching gaps. And download weather data for promising stations, convert them to `chillR` format and compile them in a list.
 
-The station PORVOO KALLBADAGRUND looks most useful fore us to fill our gaps. 
+The station PORVOO KALLBADAGRUND looks most useful for us to fill our gaps. 
 ```{r lad, eval=FALSE}
 station_listCillRcode<-c("029870_99999")#PORVOO KALLBADAGRUND
 
@@ -444,7 +444,7 @@ patched<-patch_daily_temperatures(weather = Helsinki,
 
 <span style="color:gray">6. Investigate the results - have all gaps been filled?.
 
-We can use the `fix_weather()` function to fill the gaps and with the qualitycontrol we can take a look at where the remaining gaps are:
+We can use the `fix_weather()` function to fill the gaps and with the quality control we can take a look at where the remaining gaps are:
 ```{r eval=FALSE }
 
 Helsinki_weather<-fix_weather(patched)
@@ -460,8 +460,8 @@ DT::datatable(post_patch_stats, options = list(pageLength = 10),caption="Data co
 
 
 ```
-We s´can see that there is no day missing. 
-Now we can safe our dataset:
+We can see that there is no day missing. 
+Now we can save our dataset:
 ```{r eval=FALSE}
 
 write.csv(Helsinki_weather$weather,"data/Helsinki_weatherLecture10.csv",row.names=FALSE)
@@ -473,7 +473,7 @@ write.csv(Helsinki_weather$weather,"data/Helsinki_weatherLecture10.csv",row.name
 <span style="color:gray">1. For the location you chose for your earlier analyses, use chillR’s weather generator to produce 100 years of synthetic temperature data.
 
 'Weather' is defined as the local climate, which is the long-term average of the annually observed weather. The 'climate' is the collection of all possible weather situations for a given location. 
-`chillR` has a fuction called `temperature_generation`, which we can to produce synthetic temperature data. For example based on our data, we downloaded in the last lecture, for 100 years:
+`chillR` has a fuction called `temperature_generation`, which we can produce synthetic temperature data. For example, based on our data, we downloaded in the last lecture, for 100 years:
 
 
 ```{r eval=FALSE}
@@ -524,6 +524,7 @@ ggplot(data=Temperatures, aes(Date,Tmax)) +
 ```{r echo=FALSE}
 
 knitr::include_graphics('Figures/Lecture11a.png')
+knitr::include_graphics('Figures/Lecture11aa.png')
 ```
 
 <span style="color:gray">2. Calculate winter chill (in Chill Portions) for your synthetic weather, and illustrate your results as histograms and cumulative distributions.
@@ -579,7 +580,9 @@ ggplot(chill_simulations, aes(x=Chill_portions)) +
 
 knitr::include_graphics('Figures/Lecture11bHisto.png')
 ```
+
 we can see the distribution of chill accumulation in the histogram and compare between simulated and observed values. The highest frequency is around 50 chill portions. We can also illustrate the cumulative distribution of the results. 
+
 ```{r eval=FALSE}
 
 chill_simulations<-chill_comparison_full_seasons[
@@ -595,12 +598,13 @@ ggplot(chill_simulations, aes(x=Chill_portions)) +
 
 knitr::include_graphics('Figures/Lecture11cCum.png')
 ```
-we can follow the course of the chill accumulation and see that it has a slight S-shape through the ends and the rest appearsto be relatively linear. 
+
+We can follow the course of the chill accumulation and see that it has a slight S-shape through the ends and the rest appears to be relatively linear. 
 
 <span style="color:gray">3. Produce similar plots for the number of freezing hours (<0°C) in April (or October, if your site is in the Southern Hemisphere) for your location of interest.
 
-
 We calculate the freezing hours based on our temperature data calculated in task 1.
+
 ```{r eval=FALSE}
 Temperatures<-read.csv("data/Temperatures.csv")#load data
 April<-dplyr::filter(Temperatures,Month==4)#filter data from April
@@ -621,6 +625,7 @@ ggplot(April_freezing, aes(x=Hour)) +
 
 knitr::include_graphics('Figures/Lecture113a.png')
 ```
+
 We can also create the cumulative plot:
   
 ```{r eval=FALSE }
@@ -647,11 +652,8 @@ In this carp chapter we have learned several functions to save date/scenarios li
 # **13** Historic temperature scenarios
 <span style="color:gray">1. For the location you chose for previous exercises, produce historic temperature scenarios representing several years of the historic record (your choice).
 
-In the last lecture we used a weather generator to produce agroclimatic profiles for Helsinki. 
-The weather generator can also produce scenarios that represent different climatic conditions.
-We can for example us it to generate a scenarios that represent particular years from the historic record. This has the advantage that we get to know what temperature conditions should have been considered normal at the time, rather than what actually happened. With this scenarios we can try to evaluate the gradual shift in climate.
-But first we have to generate them: 
-
+We can for example us it to generate a scenario that represent particular years from the historic record. This has the advantage that we get to know what temperature conditions should have been considered normal at the time, rather than what happened. With this scenario we can try to evaluate the gradual shift in climate.
+But first we must generate them: 
 
 ```{r eval=FALSE}
 
@@ -748,7 +750,7 @@ g
 ```
 
 
-```{r echo=FALSE}
+```{r echo=FALSE,out.width = '70%'}
 
 knitr::include_graphics('Figures/Lecture13.png')
 ```
@@ -1028,7 +1030,7 @@ plot_climate_scenarios(
 ```
 
 
-```{r echo=FALSE}
+```{r echo=FALSE,out.width = '90%'}
 
 knitr::include_graphics('Figures/Lecture14.png')
 knitr::include_graphics('Figures/Lecture14Frost.png')
@@ -1210,7 +1212,7 @@ knitr::include_graphics('Figures/Lecture15.png')
 <span style="color:gray">1. Perform a similar analysis for the location you’ve chosen for your exercises.
 
 In this lecture we want to assess past and future changes in Safe Winter Chill using multiple chill models. Safe Winter Chill is defined as the 10% quantile of the kind of chill distributions. 
-This calculation offers an opportunity for reducing the complexity of our simulation results by presenting our data in different formats lika a heat map. We will use the heat map to illustrate differences in the behavior of the various chill models that have been used in the literature (and sometimes in practice).
+This calculation offers an opportunity for reducing the complexity of our simulation results by presenting our data in different formats like a heat map. We will use the heat map to illustrate differences in the behavior of the various chill models that have been used in the literature (and sometimes in practice).
 
 To do this we first have to install the `dormancyR` package, load `dormancyR` and `chillR` and check what models are available there. With the `devtools` package, we can install the `dormancyR`package directly from github.
 
@@ -1513,7 +1515,7 @@ chill_comp_plot
 
 ```
 
-```{r echo=FALSE}
+```{r echo=FALSE,out.width = '80%'}
 
 knitr::include_graphics('Figures/Lecture16a.png')
 
@@ -1577,12 +1579,12 @@ knitr::include_graphics('Figures/AnimationGif.gif')
 <span style="color:gray">1.Provide a brief narrative describing what p-hacking is, and why this is a problematic approach to data analysis.
 
 The aim of a data analysis is to find a correlation between the data.  
-A very simple relationship between data is e.g. a linear relationship. When testing whether data have a linear relationship to each other, the degree of probability of this relationship can be given by the p-value.
-In general is the p-value the probability of obtaining test results at least as extreme as the results actually observed, under the assumption that the null hypothesis is correct. Some people use this value to find patterns in data that can be presented as statistically significant (high p-value), thus dramatically increasing and understating the risk of false positives. This method is called p-hacking. The process of data dredging involves testing multiple hypotheses using a single data set by exhaustively searching—perhaps for combinations of variables that might show a correlation, and perhaps for groups of cases or observations that show differences in their mean or in their breakdown by some other variable. The idea of having several hypotheses contradicts the basic principles of scientific work. This types of screening can lead to hypotheses that can then be tested through further studies, but we should not rely on this to generate ‘facts.’
+A very simple relationship between data is e.g., a linear relationship. When testing whether data have a linear relationship to each other, the degree of probability of this relationship can be given by the p-value.
+In general, is the p-value the probability of obtaining test results at least as extreme as the results actually observed, under the assumption that the null hypothesis is correct. Some people use this value to find patterns in data that can be presented as statistically significant (high p-value), thus dramatically increasing, and understating the risk of false positives. This method is called p-hacking. The process of data dredging involves testing multiple hypotheses using a single data set by exhaustively searching—perhaps for combinations of variables that might show a correlation, and perhaps for groups of cases or observations that show differences in their mean or in their breakdown by some other variable. The idea of having several hypotheses contradicts the basic principles of scientific work. These types of screening can lead to hypotheses that can then be tested through further studies, but we should not rely on this to generate ‘facts.’
 
 <span style="color:gray">2.Provide a sketch of your causal understanding of the relationship between temperature and bloom dates.
 
-To interpret and understand the data we have to get the process that generates the data, rather than the data themselves. For example if we have  a dataset out of temperature and bloom dates we need to know the relationship between them. 
+To interpret and understand the data we must get the process that generates the data, rather than the data themselves. For example if we have a dataset out of temperature and bloom dates we need to know the relationship between them. 
 
 It is purposefully obvious that the phenotype does not affect the temperature but the temperature affects the phenotype. 
 \[
@@ -1592,7 +1594,7 @@ However, the temperature in our latitude is influenced by the season, so they wo
 \[
 Time \rightarrow Temperature \rightarrow Phenotype
 \]
-With this basic understanding of the process we could build a process-based model. 
+With this basic understanding of the process, we could build a process-based model. 
 
 However, we can of course be more specific. For example, if we want to determine the blooming date, it will be influenced by the chilling period and the heat. 
 
@@ -1603,7 +1605,7 @@ However, we can of course be more specific. For example, if we want to determine
 
 <span style="color:gray">3.What do we need to know to build a process-based model from this?
 
-As already mentioned we need to know the chilling period and the heat. In addition, however, we have to decide when the endo- and ecodormancy starts/ends.
+As already mentioned, we need to know the chilling period and the heat. In addition, however, we must decide when the endo- and ecodormancy starts/ends.
 
 # **18** Delineating temperature response phases with PLS regression
 
@@ -1616,8 +1618,8 @@ To come up with a meaningful hypothesis, we need to bring our biological or ecol
 
 <span style="color:gray">2.Replicate the PLS analysis for the `Roter Boskoop` dataset that you used in a previous lesson.
 
-We now want to use this method to analyze our Roter Boskoop dataset (leaf emergence dates from campus Klein-Altendorf) with our temperature data from this region. Accordingly, based on our previous knowledge, we should expect that a high temperature in the spring will lead to a  earlier leaf emergence dates (our Hypothesis).
-We will do the analysis of cause with the `chillR` and the plotting with the `ggplot`library:  
+We now want to use this method to analyze our Roter Boskoop dataset (leaf emergence dates from campus Klein-Altendorf) with our temperature data from this region. Accordingly, based on our previous knowledge, we should expect that a high temperature in the spring will lead to a earlier leaf emergence dates (our Hypothesis).
+We will do the analysis of cause with the `chillR` and the plotting with the `ggplot` library:  
 
 ```{r eval=FALSE}
 library(chillR)
@@ -1739,16 +1741,15 @@ ggplot_PLS(PLS_results)
 
 ```
 
-```{r echo=FALSE}
+```{r echo=FALSE,out.width = '90%'}
 
 knitr::include_graphics('Figures/Lecture18.png')
 ```
 
 <span style="color:gray">3.Write down your thoughts on why we’re not seeing the temperature response pattern we may have expected. What happened to the chill response?
 
-The analysis resulted into two outputs the model coefficients (middel graphic), which indicates the strength of the influence and the variable importance in the projection the vip (upper graphic), which point out the significant importance of the model coefficient value of 0.8 are considerd significant. The tilling period is considerd when the model coefficients present positive significant values more temperatuere delays blooming dates (here in green). Negativ significance values indicates that less temperature delays blooming dates. The lowest graph shows the mean temperature.
-We can see (as expected) that warm temperature advancing the blooming date and to early heat (before january) can delay. But the last effect looks rather small, although the coefficient has a period longer positive period before. The reason for this could be because in the region around Campus Klein-Altendorf we always get enough chill at this time so the temperatures doesn`t matter as long they are quite similar to the normal temperatures in this area. 
-
+The analysis resulted into two outputs the model coefficients (middle graphic), which indicates the strength of the influence and the variable importance in the projection the VIP (upper graphic), which point out the significant importance of the model coefficient value of 0.8 are considered significant. The tilling period is considered when the model coefficients present positive significant values more temperature delays blooming dates (here in green). Negative significance values indicates that less temperature delays blooming dates. The lowest graph shows the mean temperature.
+We can see (as expected) that warm temperature advancing the blooming date and to early heat (before January) can delay. But the last effect looks rather small, although the coefficient has a period longer positive period before. The reason for this could be because in the region around Campus Klein-Altendorf we always get enough chill at this time so the temperatures doesn`t matter as long they are quite like the normal temperatures in this area.
 
 # **19** Successes and limitations of PLS regression analysis
 
@@ -1764,11 +1765,11 @@ knitr::include_graphics('Figures/Lecture19.png')
 
 <span style="color:gray">2. How could we overcome this problem?
 
-We could overcome this problem if, instead of temperature, we were calculate chill acumulation/heat and compare this with blooming date. With this approach we would have two parameters that have a more direct influence on the blooming date.
+We could overcome this problem if, instead of temperature, we were calculate chill accumulation/heat and compare this with blooming date. With this approach we would have two parameters that have a more direct influence on the blooming date.
 \[
 \frac{Temp_{chilling}\rightarrow chill\rightarrow}{Temp_{forcing}\rightarrow heat\rightarrow } BloomDate
 \]
-However for this we have to trust our chill model. 
+However, for this we have to trust our chill model. 
 
 
 # **20** PLS regression with agroclimatic metrics
@@ -1896,10 +1897,10 @@ plot_PLS_chill_force<-function(plscf,
                strip.position="left",
                labeller = labeller(Type = as_labeller(c(Chill=paste0("Chill (",chill_label,")"),Heat=paste0("Heat (",heat_label,")")) )) ) +
     ggtitle("Daily chill and heat accumulation rates") +
-    theme_bw(base_size=15) + 
+    theme_bw(base_size=20) + 
     theme(strip.background = element_blank(),
           strip.placement = "outside",
-          strip.text.y = element_text(size =12),
+          strip.text.y = element_text(size =15),
           plot.title = element_text(hjust = 0.5),
           axis.title.y=element_blank()
     )
@@ -1930,10 +1931,10 @@ plot_PLS_chill_force<-function(plscf,
                labeller = labeller(Type = as_labeller(c(Chill="VIP for chill",Heat="VIP for heat") )) ) +
     scale_y_continuous(limits=c(0,max(plscf[[chill_metric]][[heat_metric]]$PLS_summary$VIP))) +
     ggtitle("Variable Importance in the Projection (VIP) scores") +
-    theme_bw(base_size=15) + 
+    theme_bw(base_size=20) + 
     theme(strip.background = element_blank(),
           strip.placement = "outside",
-          strip.text.y = element_text(size =12),
+          strip.text.y = element_text(size =15),
           plot.title = element_text(hjust = 0.5),
           axis.title.y=element_blank()
     ) +
@@ -1972,10 +1973,10 @@ plot_PLS_chill_force<-function(plscf,
     scale_y_continuous(limits=c(min(plscf[[chill_metric]][[heat_metric]]$PLS_summary$Coef),
                                 max(plscf[[chill_metric]][[heat_metric]]$PLS_summary$Coef))) +
     ggtitle("Model coefficients (MC)") +
-    theme_bw(base_size=15) + 
+    theme_bw(base_size=20) + 
     theme(strip.background = element_blank(),
           strip.placement = "outside",
-          strip.text.y = element_text(size =12),
+          strip.text.y = element_text(size =15),
           plot.title = element_text(hjust = 0.5),
           axis.title.y=element_blank()
     ) +
@@ -1996,8 +1997,8 @@ plot_PLS_chill_force<-function(plscf,
             plot_layout(ncol=1,
                         guides = "collect")
   ) & theme(legend.position = "right",
-            legend.text = element_text(size=8),
-            legend.title = element_text(size=10),
+            legend.text = element_text(size=15),
+            legend.title = element_text(size=20),
             axis.title.x=element_blank())
   
   plot
@@ -2015,35 +2016,12 @@ knitr::include_graphics('Figures/Lecture20d.png')
 
 <span style="color:gray">1. Look across all the PLS results presented above. Can you detect a pattern in where chilling and forcing periods could be delineated clearly, and where this attempt failed?
 
-In [Chapter 21](http://inresgb-lehre.iaas.uni-bonn.de/chillR_book/pls_chillforce_ex.html) we see the PLS regression applied in a bunch of different contexts. The method was applied to different locations with different temperature patterns, day lengths and tree species. We can see a gradient of the results depending on the temperature. As we have already seen in past chapters, in cooler regions the method can't detect any pattern (like Beijing). The temperature is always cold enough for chill accumulation. In warmer region 
-
-Können Sie ein Muster erkennen, bei dem die Abkühlungs- und Treibphasen klar abgegrenzt werden konnten und bei dem dieser Versuch fehlschlug?
-
-heat respose (forcing period) starts eg in januery
-
-chilling pattern hart to see
-rist model not sutebil for this tree (make for peach tree )
-peach purnus see chilling and forcing -> model gemacht für diese daten  mittelpart nicht sicher weil warscheinlcih in phase die eh kalt genug 
-
-beginning of cool sean -> clear respos of model coefficion and clrean respons at the end-> forcing 
-
-long anclear period 
-calefonier: warmer it is -> temp response clear
-
-tunesion see  clrea chill respons aber kein forcing
-
-greadiant 
-not clear in cold
-warm-> forcing clear
-hot-> chillig clear
-
-really could not chilling 
-than optimun und then if warmer no chilling pLS cant  work tryed to make it up in chill matrics heatdont have this problem becaus is never gets so hot that heat have no effect
+In [Chapter 21](http://inresgb-lehre.iaas.uni-bonn.de/chillR_book/pls_chillforce_ex.html) we see the PLS regression applied in a bunch of different contexts. The method was applied to different locations with different temperature patterns, day lengths and tree species. We can see a gradient of the results depending on the temperature. As we have already seen in past chapters, in cooler regions the method can't detect any pattern (like Beijing). The temperature is always cold enough for chill accumulation. In warmer region the chill accumulation phases are much shorter and the trees are probably adapted to this. The model is also based on a peach tree. Accordingly, it is questionable how far the results can be transferred to other species.
 
 <span style="color:gray">2.Can you think about possible reasons for the success or failure of PLS analysis based on agroclimatic metrics (if so, write down your thoughts)?
 
 The reasons for the inapplicable analyses are manifold. If we assume that our model is basically correct, it may be due to the calibration. The model is based on data from peach trees. However, in the examples, it is also applied to walnut trees or almonds, etc. This can lead to incorrect analysis results.
-Furthermore, the basic assumption that all temerature responses are the same may be wrong. Accordingly, one could not use the same model over the entire period. In a tree there are many different processes going on during this time and probably one would have to consider these more in the model.
+Furthermore, the basic assumption that all temperature responses are the same may be wrong. Accordingly, one could not use the same model over the entire period. In a tree there are many different processes going on during this time and probably one would have to consider these more in the model.
 
 # **22** Why PLS doesn’t always work
 
@@ -2141,8 +2119,7 @@ knitr::include_graphics('Figures/Lecture22a.png')
 <span style="color:gray">2. Look at the plots for the agroclimate-based PLS analyses of the ‘Alexander Lucas’ and ‘Roter Boskoop’ datasets. Provide your best estimates of the chilling and forcing phases.
 
 
-
-hkizfgjhkbjjjjjjjjjjjjjj
+Based on the results of the PLS analyses, I would say that the chilling phase starts at the end of October or November and goes until about January and the forcing phase starts in mid/end January and goes until about April.  
 
 # **23** Evaluating PLS outputs
 
@@ -2280,12 +2257,12 @@ pheno_trend_ggplot(
 knitr::include_graphics('Figures/Lecture23a.png')
 ```
 
-We see here an interpolated surface from all bloom dates included in the phenology record, which relates bloom date expectations to temperatures during the chilling phase (x-axis) and the forcing phase (y-axis). The shape of the plotted surface is defined by the array of winter conditions that have been observed since 1958. The white areas means, that there have been no years with this average temperature during chilling and forcing e.g. here -2°C at chilling and 4°C during forcing. 
+We see here an interpolated surface from all bloom dates included in the phenology record, which relates bloom date expectations to temperatures during the chilling phase (x-axis) and the forcing phase (y-axis). The shape of the plotted surface is defined by the array of winter conditions that have been observed since 1958. The white areas mean, that there have been no years with this average temperature during chilling and forcing e.g., here -2°C at chilling and 4°C during forcing. 
 The array of historically observed conditions is relatively narrow here, with a similarly strong correlation between temperatures during eco- and endodormancy as we have seen with the data of [Alexander_Lucas data](http://inresgb-lehre.iaas.uni-bonn.de/chillR_book/pls_eval_PLS.html). In addition, we can also see here all the blue colors are near the top of the plot, while the red colors are at the bottom. This means that early bloom dates (blue) were mostly associated with a warm forcing phase, while cool conditions during that period were related to late bloom. 
 
 <span style="color:gray">2. We’ve looked at data from a number of locations so far. How would you expect this surface plot to look like in Beijing? And how should it look in Tunisia?
 
-Winters in Beijing are longer and colder than in germany. Accordingly, the area of winter conditions will be larger and thus show a lower correlation between eco- and endodormancy, because the trees can always get enough chilling hours. The correlation between late flowering (red) and cool conditions in this period will probably be seen anyway. 
+Winters in Beijing are longer and colder than in Germany. Accordingly, the area of winter conditions will be larger and thus show a lower correlation between eco- and endodormancy, because the trees can always get enough chilling hours. The correlation between late flowering (red) and cool conditions in this period will probably be seen anyway. 
 In Tunisia, on the other hand, winters are comparatively warm and mild. Accordingly, the area will probably also be larger than in our German example from task 1. There will probably be more trees growing in such regions that need few chilling hours and accordingly the bloom dates will probably be significantly shorter and not between 100 and about 135 as in the example from task 1.
 
 # **24** The relative importance of chill and heat
@@ -2298,14 +2275,14 @@ In the following picture you can see the hypothetical response of temperate tree
 knitr::include_graphics('Figures/Lecture24.png')
 ```
 
-We can see that if its gets warmer the temperature response will follow the upward trend to earlier spring phases/earlier bloom dates. In cold reagions (blue part of the figure) is probably the chill accumulation so high, that the usual temperature variation during this period has little to no effect.
-With increasing temperature the conditions during chill accumulation start to showing an effect (yellow part of the figure). Eventually the further increases in temperature is positively correlating to the effect of temperature conditions during chill accumulation, which take over as the dominant effect (red part of the figure). 
+We can see that if it gets warmer the temperature response will follow the upward trend to earlier spring phases/earlier bloom dates. In cold regions (blue part of the figure) is probably the chill accumulation so high, that the usual temperature variation during this period has little to no effect.
+With increasing temperature, the conditions during chill accumulation start to show an effect (yellow part of the figure). Eventually the further increase in temperature is positively correlating to the effect of temperature conditions during chill accumulation, which take over as the dominant effect (red part of the figure). 
 At this point higher temperatures could no longer lead to advancing phenology, but first to stagnation and ultimately even to delays in budbreak dates. 
-The problem in testing this hypothesis is that there are few regions with such high temperatures where fruit trees are growing. This fact makes it difficult to test, but on the other hand it is also an indication of the correctness of the hypothesis, since the trees may not grow there because they do not have enough chill accumulation. 
+The problem in testing this hypothesis is that there are few regions with such high temperatures where fruit trees are growing. This fact makes it difficult to test, but on the other hand it is also an indication of the correctness of the hypothesis, since the trees may not grow there because they do not have enough chill accumulation.
 
 # **26** Making valid tree phenology models
 
-So far we didn´t dealt with the modeling of the whole dormancy season - and making predictions of budburst dates. For this challenge we should always have in mind that there are still uncertainties as to how exactly the processes occur, and these uncertainties must be taken into account when creating and interpreting the models. 
+So far, we didn´t dealt with the modeling of the whole dormancy season - and making predictions of budburst dates. For this challenge we should always have in mind that there are still uncertainties as to how exactly the processes occur, and these uncertainties must be considered when creating and interpreting the models. 
 Therefore, model validation is an important concept that we will deal with first. 
 
 <span style="color:gray">1. Explain the difference between output validation and process validation.
@@ -2320,11 +2297,11 @@ All models should have a validity domain, which is a range of conditions that th
 
 <span style="color:gray">3. What is validation for purpose?
 
-We make models for reasons, but rarely the reason is to model exact what we see. Most of the time we want to model how systems would respond to things we din`t try yet. 
+We make models for reasons, but rarely the reason is to model exact what we see. Most of the time we want to model how systems would respond to things we didn’t try yet. 
 
 <span style="color:gray">4. How can we ensure that our model is suitable for the predictions we want to make?
 
-We need to make sure that our model is reasonably similar to the structure of the system we model. In addition we should always validate the model on situations, which have similar conditions to the scenario where we want to make predictions on.
+We need to make sure that our model is reasonably similar to the structure of the system we model. In addition, we should always validate the model on situations, which have similar conditions to the scenario where we want to make predictions on.
 
 # **27** The `PhenoFlex` model
 
@@ -2332,8 +2309,8 @@ We need to make sure that our model is reasonably similar to the structure of th
 
 Parameterize means that we have parameters that assign points to the 
 set to predict individual points of the set. To create a model, which has the
-state of the art in tree phenology we have to parameterize 12 parameter. 12 Parameters 
-seems quite a lot but to get a critical mass of phenology data is sometimse quite hard, because it is a lot of efford to collect all needed data.
+state of the art in tree phenology we must parameterize 12 parameters. 12 Parameters 
+seems quite a lot but to get a critical mass of phenology data is sometimes quite hard, because it is a lot of effort to collect all needed data.
 
 ```{r eval=FALSE}
 library(chillR)
@@ -2358,7 +2335,8 @@ par <-   c(40, 190, 0.5, 25, 3372.8,  9900.3, 6319.5, 5.939917e13,  4, 36,  4,  
 upper <- c(41, 200, 1.0, 30, 4000.0, 10000.0, 7000.0,       6.e13, 10, 40, 10, 50.00)#upper limit
 lower <- c(38, 180, 0.1, 0 , 3000.0,  9000.0, 6000.0,       5.e13,  0,  0,  0,  0.05)#lower limits
 ```
-The problem is some parameter are hard to guess. The max and min values are easy, they are similar to optimum temperature. Harder to estimate are e.g. the structure of chill portion precursor, because we don´t really know how they respond to in terms of biology. We just know what the dynamic model included but we have to estimaed the upper and lower boundary. In addition the chill (yC) and heat (ZC) requirements are hard to guess because they can assume all kinds of values depending on how the other parameters are chosen. That`s why we run the solver to find optimal parameter values:
+
+The problem is some parameters are hard to guess. The max and min values are easy, they are similar to optimum temperature. Harder to estimate are e.g., the structure of chill portion precursor, because we don´t really know how they respond to in terms of biology. We just know what the dynamic model included but we must estimate the upper and lower boundary. In addition, the chill (yC) and heat (ZC) requirements are hard to guess because they can assume all kinds of values depending on how the other parameters are chosen. That`s why we run the solver to find optimal parameter values:
 
 ```{r eval=FALSE}
 SeasonList <- genSeasonList(hourtemps$hourtemps, mrange = c(8, 6), years=c(1959:2018))
@@ -2625,11 +2603,11 @@ knitr::include_graphics('Figures/Lecture28b.png')
 
 <span style="color:gray">1. What was the objective of this work?
 
-The goal was to assess the impact of marginal seasons on the predictive performance of PhenoFlex. The difficulty here lay in the selection of the right date set. Some times we getting a not fitting response curve for chilling. A reason for this could be that the data we use to train the model are unsuitable for finding out anything about the response on the winter season (Novermber-Januar), because there are less data points in this period. For the callibartion of the modelwe have to check how the model is responding depending on training data. That`s why we need a fitting procedure, where we store the randomized training data to get a better feeling for which results led to which output. 
+The goal was to assess the impact of marginal seasons on the predictive performance of PhenoFlex. The difficulty here lay in the selection of the right date set. Sometimes we are getting a not fitting response curve for chilling. A reason for this could be that the data we use to train the model are unsuitable for finding out anything about the response on the winter season (November - January), because there are less data points in this period. For the calibration of the model, we have to check how the model is responding depending on training data. That`s why we need a fitting procedure, where we store the randomized training data to get a better feeling for which results led to which output. 
   
 <span style="color:gray">2. What was the main conclusion?
 
-The main conlusion that there is a limit of maginal data we should take into account for testing. It is reasenalble to Orinat the selection of point according to what we want to predict. Getting an impression on what climat conditions are predicted here in the future should gite our selection on our training an valisation data. In addition we have to be careful to add extrem tredments in such a analysis, because there could be some biological mechanisms that are not considerd in the `PhenoFLex` framework.
+The main conclusion that there is a limit of marginal data we should take into account for testing. It is reasonable to Orient the selection of point according to what we want to predict. Getting an impression on what climate conditions are predicted here in the future should gite our selection on our training an validation data. In addition, we have to be careful to add extreme treatments in such a analysis, because there could be some biological mechanisms that are not considered in the `PhenoFLex` framework.
 
 <span style="color:gray">3. What experiments could we conduct to test the hypothesis that emerged at the end of the conclusion?
 
@@ -2703,7 +2681,7 @@ ggplot(data=Ribbon_Lucas) +
   
 ```
 
-```{r echo=FALSE, fig.cap = "The new SSA logo, which is actually a scatterplot, which is super neat!"}
+```{r echo=FALSE, ,out.width = '100%'}
 knitr::include_graphics("Figures/Lecture30a.png")
 ```
 
@@ -2722,7 +2700,7 @@ ggplot(data=Roter_Boskoop,aes(Pheno_year,JDay,col=variable)) +
 
 ```
 
-```{r echo=FALSE}
+```{r echo=FALSE,out.width = '100%'}
 
 knitr::include_graphics('Figures/Lecture30b.png')
 ```
@@ -2746,7 +2724,7 @@ ggplot(data=Ribbon_Lucas) +
   
 ```
 
-```{r echo=FALSE}
+```{r echo=FALSE,out.width = '95%'}
 
 knitr::include_graphics('Figures/Lecture30c.png')
 ```
@@ -2802,14 +2780,34 @@ ggplot(data=Daily_frost,aes(Year,JDay,size=Frost_hours)) +
   
 ```
 
-```{r echo=FALSE}
+```{r echo=FALSE,out.width = '93%'}
 
-knitr::include_graphics('Figures/Lectures30DD.png')
+knitr::include_graphics('Figures/Lecture30DD.png')
 ```
 
 <span style="color:gray">4. Produce an illustration of the relationship between spring frost events and the bloom period of ‘Roter Boskoop.’
 
 ```{r eval=FALSE}
+lookup_dates<-Ribbon_Lucas
+row.names(lookup_dates)<-lookup_dates$Pheno_year
+
+Daily_frost[,"First_bloom"]<-
+  lookup_dates[as.character(Daily_frost$Year),"First_bloom"]
+Daily_frost[,"Last_bloom"]<-
+  lookup_dates[as.character(Daily_frost$Year),"Last_bloom"]
+
+Daily_frost[
+  which(!is.na(Daily_frost$Frost_hours)),"Bloom_frost"]<-
+  "Before bloom"
+Daily_frost[
+  which(Daily_frost$JDay>=Daily_frost$First_bloom),"Bloom_frost"]<-
+  "During bloom"
+Daily_frost[
+  which(Daily_frost$JDay>Daily_frost$Last_bloom),"Bloom_frost"]<-
+  "After bloom"
+Daily_frost[
+  which(Daily_frost$JDay>180),"Bloom_frost"]<-
+  "Before bloom"
 
 ggplot(data=Roter_Boskoop,
        aes(Pheno_year,JDay,col=variable)) +
@@ -2835,7 +2833,7 @@ ggplot(data=Roter_Boskoop,
 
 ```{r echo=FALSE}
 
-knitr::include_graphics('Figures/Lecture30d.png')
+knitr::include_graphics('Figures/Lecture30e.png')
 ```
 
 <span style="color:gray">5.Evaluate how the risk of spring frost for this cultivar has changed over time. Has there been a significant trend?
@@ -2902,4 +2900,4 @@ phenology_trends
 #3  Last bloom  -0.3803256 1.913562e-05   -0.3138551
 ```
 
-As can be seen in the analysis, frost risk for first, full and last blooming decreases over time. This can be seen in the significant p-values and the linear trents, which are all negative. 
+The main conclusion that there is a limit of marginal data we should consider for testing. It is reasonable to Orient the selection of point according to what we want to predict. Getting an impression on what climate conditions are predicted here in the future should gite our selection on our training and validation data. In addition, we must be careful to add extreme treatments in such ab analysis, because there could be some biological mechanisms that are not considered in the `PhenoFLex` framework.
